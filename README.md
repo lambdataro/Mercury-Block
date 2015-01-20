@@ -4,7 +4,7 @@
 全部で3ステージあります．
 
 ## スクリーンショット (Linux)
-!(スクリーンショット(Linux))[https://raw.githubusercontent.com/lambdataro/Mercury-Block/master/screen_linux.png]
+!(スクリーンショット1)[https://raw.githubusercontent.com/lambdataro/Mercury-Block/master/screen_linux.png]
 
 ## スクリーンショット (Windows)
-!(スクリーンショット(Windows))[https://raw.githubusercontent.com/lambdataro/Mercury-Block/master/screen_windows.png]
+!(スクリーンショット2)[https://raw.githubusercontent.com/lambdataro/Mercury-Block/master/screen_windows.png]
