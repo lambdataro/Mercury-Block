@@ -3,8 +3,8 @@
 
 全部で3ステージあります．
 
-## スクリーンショット (Linux)
+## スクリーンショット (Open SUSE 13.02)
 ![スクリーンショット1](https://raw.githubusercontent.com/lambdataro/Mercury-Block/master/screen_linux.png)
 
-## スクリーンショット (Windows)
+## スクリーンショット (Windows 8.1)
 ![スクリーンショット2](https://raw.githubusercontent.com/lambdataro/Mercury-Block/master/screen_win.png)
