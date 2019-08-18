@@ -5,7 +5,7 @@
 
 :- implementation.
 
-:- import_module int, float, math.
+:- import_module int, integer, float, math.
 :- import_module bool, string.
 :- import_module list, solutions.
 :- import_module map, assoc_list, pair.
@@ -411,15 +411,15 @@ load_block_loop1(N, !Map, !IO) :-
   map(block_id, block)::in, map(block_id, block)::out) is det.
 load_block_loop2(_, _, token_nil, !Map).
 load_block_loop2(N, M, token_cons(Tkn, _, Rest), !Map) :-
-  if Tkn = integer(V) then
+  if Tkn = integer(_, V, _, _) then
     (
-      if V \= 0 then
+      if V \= zero then
         B = block(
           float(M) * block_w + frame_size1,
           float(N) * block_h + frame_size2,
           float(M) * block_w + frame_size1 + block_w - 1.0,
           float(N) * block_h + frame_size2 + block_h - 1.0,
-          int_to_bc(V)),
+          int_to_bc(det_to_int(V))),
         !:Map = det_insert(!.Map, {N, M}, B),
         load_block_loop2(N, M + 1, Rest, !Map)
       else
